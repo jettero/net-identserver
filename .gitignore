@@ -1,8 +1,8 @@
-META.yml
-pm_to_blib
+alttest.file
 blib
-Makefile
 identserver.log
 identserver.pid
-alttest.file
+Makefile
+META.yml
 nftest.file
+pm_to_blib
