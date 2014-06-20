@@ -307,6 +307,14 @@ drop me a line.  I usually answer my email.
 
 © 2014 Paul Miller
 
+=head1 BUGS
+
+Of course. But lemme know what they are?
+
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Net::IdentServer>
+
+(maybe the name is one? Net::Ident::Server maybe? meh…)
+
 =head1 LICENSE
 
 Perl Artisitic License — use this like any other Perl thing.
