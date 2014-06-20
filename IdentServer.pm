@@ -6,9 +6,8 @@ use warnings;
 use POSIX;
 use Carp;
 use base qw(Net::Server::Fork);
-use Net::IP;
 
-our $VERSION  = "0.60";
+our $VERSION  = "0.601";
 
 1;
 
@@ -314,6 +313,9 @@ Of course. But lemme know what they are?
 L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Net::IdentServer>
 
 (maybe the name is one? Net::Ident::Server maybe? meh…)
+
+There's no way this old code works with IPv6 ... it reads several bytes from
+/proc/net/somewhere and probably the whole mess needs to be redone.
 
 =head1 LICENSE
 
