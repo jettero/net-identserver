@@ -1,3 +1,10 @@
+0.602: Fri Jun 20 2014
+   - there's enough docbugs to increment this thing again.
+
+0.601: Fri Jun 20 2014
+   - just noticed I was going to use Net::IP, but didn't actually do it...
+   - (and didn't put it in the Makefile.PL)
+
 0.60: Fri Jun 20 2014
    - trying to resurrect this … maybe I should just use BINGOS’ POE server
    - redid the tests
