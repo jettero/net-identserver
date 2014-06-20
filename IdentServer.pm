@@ -165,26 +165,26 @@ Net::IdentServer - An rfc 1413 Ident server using L<Net::Server::Fork>.
 
     use Net::IdentServer;
 
-    my $nis = new Net::IdentServer;
+    my $nis = Net::IdentServer->new();
 
-    run $nis;  # This is a working identd …
+    run $nis;
+    # This is a working identd …
+    # though, you probably need to be root
 
 =head1 DESCRIPTION
 
 Although you can run this as you see in the SYNOPSIS, you'll
 probably want to rewrite a few things.
 
-Net::IdentServer is a child of Net::Server to be sure.  If
-you wish to override the behaviours of this module, just
-inherit it and start re-writing as you go.  
+L<Net::IdentServer> inherits L<Net::Server>, so click through
+to that module for a description of the arguments to new() and
+for how it reads @ARGV.
 
 An example random fifteen-letter-word ident server follows:
 
-    use strict;
+    package main;
 
-    my $s = new RandomIdentServer;
-
-    run $s;
+    RandomIdentServer->new( user=>'nobody', group=>'nobody' )->run;
 
     package RandomIdentServer;
 
