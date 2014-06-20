@@ -4,7 +4,5 @@ MANIFEST
 Makefile.PL
 README
 t/01_load.t
-t/05_runone.t
 t/10_error_test.t
 t/15_success.t
-t/20_unlinks.t

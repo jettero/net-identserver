@@ -80,7 +80,7 @@ sub do_lookup {
                 }
             }
         }
-        close $ctp;
+        close $tcp;
     }
 
     if( $found < 0 ) {
@@ -129,7 +129,7 @@ sub process_request {
     eval {
         while( my $input = <STDIN> ) {
            $input = "" unless $input; # to deal with stupid undef warning
-           $input =~ s/[\x0d\x0a]//g;
+           $input =~ s/[\x0d\x0a]+\z//;
 
             unless( $input =~ m/^\s*(\d+)\s*,\s*(\d+)\s*$/ ) {
                 $this->log(3, "Malformated request from $this->{server}{peeraddr}");

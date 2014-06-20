@@ -1,7 +1,6 @@
 alttest.file
 blib
-identserver.log
-identserver.pid
+debug.log
 Makefile
 META.yml
 MYMETA.json

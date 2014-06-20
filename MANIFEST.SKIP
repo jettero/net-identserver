@@ -1,8 +1,7 @@
 .git
 alttest.file
 blib
-identserver.log
-identserver.pid
+debug.log
 Makefile
 MANIFEST.SKIP
 META.yml
