@@ -1,6 +1,7 @@
 alttest.file
 blib
 debug.log
+dist
 Makefile
 META.yml
 MYMETA.json
