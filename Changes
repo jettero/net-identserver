@@ -1,3 +1,8 @@
+0.603: Sun Jun 22 2014
+   - I thought BSD had a /proc/net/tcp ; but now that I think about it.
+     it doesn't.  There's probably a great cross platform way to look this
+     stuff up, but I don't know it.  This is an easy fix for now.
+
 0.602: Fri Jun 20 2014
    - there's enough docbugs to increment this thing again.
 

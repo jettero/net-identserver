@@ -7,7 +7,7 @@ use POSIX;
 use Carp;
 use base qw(Net::Server::Fork);
 
-our $VERSION  = "0.602";
+our $VERSION  = "0.603";
 
 1;
 
